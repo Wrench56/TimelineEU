@@ -80,8 +80,14 @@ a {
 }
 
 @keyframes button-hover {
-    0% { background-color: #FFB600; }
-    100% { background-color: #cc8300; }
+    0% {
+        background-color: #FFB600;
+        padding: 10px;
+    }
+    100% {
+        background-color: #cc8300; 
+        padding: 12px;
+    }
 }
 
 /* Style the paragraph tags */
@@ -202,7 +208,7 @@ p {
         display: inline-block;
     }
     .tablet {
-        display: inine-block;
+        display: inline-block;
     }
     .tablet-only {
         display: none;
