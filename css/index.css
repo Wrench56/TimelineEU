@@ -1,17 +1,3 @@
-body {
-    background-color: #242834;
-    margin: 10px;
-}
-
-a {
-    color: rgb(0, 136, 255);
-}
-
-.center {
-    align-items: center;
-    text-align: center;
-}
-
 /* Headers */
 #mainheader {
     margin-left: 5%;
@@ -31,17 +17,6 @@ a {
     font-size: 110%;
     animation: swim-in 1.4s 0.8s forwards; 
     will-change: opacity;
-}
-
-@keyframes swim-in {
-    0% {
-        transform: translateX(-150%);
-        opacity: 100%;
-    }
-    100% {
-        transform: translateX(0%);
-        opacity: 100%;
-    }
 }
 
 /* General button */
@@ -98,18 +73,6 @@ a {
     width: 45%;
 }
 
-p {
-    opacity: 100%;
-    color: whitesmoke;
-    font-family: verdana;
-    /*animation: fade-in 1s 2s forwards;*/
-    
-}
-
-@keyframes fade-in {
-    0% { opacity: 0%; }
-    100% { opacity: 100%; }
-}
 
 /* Vertical line */
 
@@ -123,22 +86,6 @@ p {
     border: 1px solid #FFB600;
     border-radius: 20px;
 }
-
-/* Footer */
-
-.footer {
-    position: fixed;  
-    left: 10px;  
-    bottom: 10px;  
-    right: 10px;   
-    width: 95%;  
-    color: lightgray;
-    text-align: center;
-    font-family: verdana;
-    font-size: 10px;
-    
-}
-
 
 
 /* Breakpoints */

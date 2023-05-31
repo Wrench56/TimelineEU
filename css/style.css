@@ -1,0 +1,58 @@
+/* Style for tags */
+
+body {
+    background-color: #242834;
+    margin: 10px;
+}
+
+a {
+    color: rgb(0, 136, 255);
+}
+
+p {
+    opacity: 100%;
+    color: whitesmoke;
+    font-family: verdana;
+    /*animation: fade-in 1s 2s forwards;*/
+    
+}
+
+/* Classes */
+
+.center {
+    align-items: center;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    position: fixed;  
+    left: 10px;  
+    bottom: 10px;  
+    right: 10px;   
+    width: 95%;  
+    color: lightgray;
+    text-align: center;
+    font-family: verdana;
+    font-size: 10px;
+    
+}
+
+/* Animations */
+
+@keyframes swim-in {
+    0% {
+        transform: translateX(-150%);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
