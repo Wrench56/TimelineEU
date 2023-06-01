@@ -96,6 +96,22 @@
     border-radius: 8px;
 }
 
+.content:hover {
+    background-color: #1e2229;
+}
+
+.right:hover::before {
+    border: medium solid #1e2229;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #1e2229 transparent transparent;
+}
+
+.left:hover::before {
+    border: medium solid #1e2229;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #1e2229;
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
     /* Place the timeline to the left */
