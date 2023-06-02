@@ -1,0 +1,7 @@
+{
+    "subheader": "Ein Projekt, das die Geschichte der Europäischen<br> Union präsentiert.",
+    "subheader-mobile": "Ein Projekt, das die Geschichte<br> der Europäischen Union präsentiert.",
+    "about": "Dieses Projekt versucht, die historischen und hauptsächlich politischen Ereignisse der Europäischen Union seit dem Zweiten Weltkrieg zu visualisieren. Mein Hauptziel war es, ausreichend visuelles Material zur Verfügung zu stellen, um die Innovationen und Ereignisse der EU ohne viel Erklärung zu präsentieren. Dazu habe ich verschiedene Diagramme und Grafiken verwendet, ergänzt durch einige erklärende Skizzen. Wenn Sie Unstimmigkeiten feststellen, können Sie gerne ein \"Issue\" auf meiner <a href=\"https://github.com/Wrench56/TimelineEU\">GitHub</a>-Seite melden.",
+    "to-timeline": "Zur Timeline",
+    "resolution-error": "Entschuldigung, aber derzeit unterstützen wir Ihre Auflösung nicht."   
+}
