@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="javascript/translate.js"></script>
+    <script src="javascript/index.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" rel="noopener" target="_blank" href="resources/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" rel="noopener" target="_blank" href="resources/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" rel="noopener" target="_blank" href="resources/favicon/favicon-apple-touch.png">
@@ -18,32 +20,32 @@
     <div class="desktop tablet">
         <div class="desktop-only">
             <h1 id="mainheader">Timeline: EU </h1>
-            <h2 id="subheader">A project showcasing the history of the EU</h2>
+            <h2 id="subheader" name="subheader"></h2>
         </div>
         <div class="tablet-only">
             <h1 id="mainheader">Timeline: EU </h1>
-            <h2 id="subheader">A project showcasing the <br>history of the EU</h2>
+            <h2 id="subheader" name="subheader-mobile"></h2>
         </div>
         <div class="text-container">
-            <p>This project tries to visualize the historical and mostly political events of th European Union since World War II. My main goal was to provide enough visual material to showcase the innovations & events of the EU without much explanation. For this I used various graphs and charts along with some minor explanatory sketch. Feel free to raise an issue at my <a href="https://github.com/Wrench56/TimelineEU">Github</a> page if you find any inaccuracy.</p>
+            <p name="about"></p>
         </div>
         <div class="vertical-line"></div>
         <div class="right-side">
             <div class="center button-container">
-                <a class="button" href="pages/timeline.html">To the timeline</a></p>
+                <a class="button" href="pages/timeline.html" name="to-timeline"></a></p>
             </div>
         </div>
     </div>
     <div class="mobile">
         <h1 id="mainheader">Timeline: EU </h1>
-        <h2 id="subheader">A project showcasing the history of the EU</h2>
+        <h2 id="subheader" name="subheader"></h2>
         <div class="text-container">
-            <p>This project tries to visualize the historical and mostly political events of th European Union since World War II. My main goal was to provide enough visual material to showcase the innovations & events of the EU without much explanation. For this I used various graphs and charts along with some minor explanatory sketch. Feel free to raise an issue at my <a href="https://github.com/Wrench56/TimelineEU">Github</a> page if you find any inaccuracy.</p>
-            <p>Sorry, but currently we do not support your device.</p>
+            <p name="about"></p>
+            <p name="resolution-error"></p>
         </div>
     </div>
     <div id="error-size">
-        <p>Sorry, but we currently do NOT support your resolution!</p>
+        <p name="resolution-error"></p>
     </div>
     <div class="footer">
         © 2023 All rights reserved to Wrench56
