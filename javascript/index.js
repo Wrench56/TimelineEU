@@ -1,5 +1,5 @@
-if (!/[?]lang=/.test(window.location.href)) {
-    window.location.href += "?lang=en-US";
+if (localStorage.getItem("site-language") == null) {
+    localStorage.setItem("site-language", "en-US");
 }
 
 window.onload = (event) => {
