@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* Headers */
 #mainheader {
     margin-left: 5%;
@@ -15,7 +17,7 @@
     opacity: 0%;
     font-family: verdana;
     font-size: 110%;
-    animation: swim-in 1.4s 0.8s forwards; 
+    animation: swim-in 1.4s 0.8s forwards;
     will-change: opacity;
 }
 
@@ -60,7 +62,7 @@
         padding: 10px;
     }
     100% {
-        background-color: #cc8300; 
+        background-color: #cc8300;
         padding: 12px;
     }
 }
