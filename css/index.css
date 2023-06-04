@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* Headers */
-#mainheader {
+.mainheader {
     margin-left: 5%;
     margin-bottom: 4px;
     color: whitesmoke;
@@ -10,7 +10,7 @@
     animation: swim-in 1.2s;
 }
 
-#subheader {
+.subheader {
     margin-left: 8%;
     margin-bottom: 0px;
     color: lightgray;
@@ -110,7 +110,7 @@
     #error-size {
         display: none
     }
-    #mainheader {
+    .mainheader {
         font-size: 200%;
     }
     .text-container {
@@ -137,11 +137,11 @@
     #error-size {
         display: none
     }
-    #mainheader {
+    .mainheader {
         margin-left: 3%;
         font-size: 250%;
     }
-    #subheader {
+    .subheader {
         margin-left: 6%;
         font-size: 110%;
     }
