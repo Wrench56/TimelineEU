@@ -3,7 +3,7 @@
 const hostURL = `${window.location.origin}/TimelineEU`;
 const chooseLanguageHref = "/pages/chooseLanguage.html";
 
-if (localStorage.getItem("site-language") == null && window.location.pathname != chooseLanguageHref) {
+if (localStorage.getItem("site-language") == null && window.location.pathname != `/TimelineEU${chooseLanguageHref}`) {
     localStorage.setItem("language-redirect", window.location.href);
     window.location.href = `${hostURL}${chooseLanguageHref}`;
 }
