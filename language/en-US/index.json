@@ -1,7 +1,7 @@
 {
     "subheader": "A project showcasing the history of the EU",
     "subheader-mobile": "A project showcasing the <br>history of the EU",
-    "about": "This project tries to visualize the historical and mostly political events of th European Union since World War II. My main goal was to provide enough visual material to showcase the innovations & events of the EU without much explanation. For this I used various graphs and charts along with some minor explanatory sketch. Feel free to raise an issue at my <a href=\"https://github.com/Wrench56/TimelineEU\">GitHub</a> page if you find any inaccuracy.",
+    "about": "This project tries to visualize the historical and mostly political events of the European Union since World War II. My main goal was to provide enough visual material to showcase the innovations & events of the EU without much explanation. For this, I used various graphs and charts along with some minor explanatory sketch. Feel free to raise an issue at my <a href=\"https://github.com/Wrench56/TimelineEU\">GitHub</a> page if you find any inaccuracy.",
     "to-timeline": "To the timeline",
-    "resolution-error": "Sorry, but currently we do not support your resolution."
+    "resolution-error": "Apologies, but we currently do not support your screen resolution."
 }
