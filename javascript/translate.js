@@ -1,16 +1,43 @@
-function translate(rel_path_to_lang) {
+"use strict";
+
+const hostURL = window.location.origin;
+const chooseLanguageHref = "TimelineEU/pages/chooseLanguage.html";
+
+if (localStorage.getItem("site-language") == null && window.location.pathname != chooseLanguageHref) {
+    localStorage.setItem("language-redirect", window.location.href);
+    window.location.href = `${hostURL}${chooseLanguageHref}`;
+}
+
+const languageMenu = document.querySelector("#language-menu");
+
+if (languageMenu != null)
+    fetch(`${hostURL}/language/languages.json`)
+        .then(response => response.json())
+        .then(json => {
+            for (const language of json) {
+                let optionElement = document.createElement("option");
+                optionElement.value = optionElement.textContent = language;
+                languageMenu.appendChild(optionElement);
+            }
+        })
+        .catch(error => console.warn(error)) // Temporary solution until error popup system gets added
+
+function translate() {
     let filename;
-    if (document.location.pathname.slice(-1) == "/") 
+    if (window.location.pathname.slice(-1) == "/")
         filename = "index.json";
     else
-        filename = document.location.pathname.match(/[^\/]+$/)[0].slice(0, -4) + "json";
-    
+        filename = window.location.pathname.match(/[^\/]+$/)[0].slice(0, -4) + "json";
     let language = localStorage.getItem("site-language");
-    fetch(`${rel_path_to_lang}/language/${language}/${filename}`)
-    .then(response => response.json())
-    .then((json) => {
-        for (const key in json) {
-            Array.from(document.getElementsByName(key)).forEach(node => node.innerHTML = json[key]);
-        }
-    });
+
+    if (window.location.pathname != chooseLanguageHref)
+        fetch(`${hostURL}/language/${language}/${filename}`)
+            .then(response => response.json())
+            .then((json) => {
+                for (const key in json)
+                    document.querySelectorAll(`*[name="${key}"]`).forEach(element => element.innerHTML = json[key]);
+            })
+            .catch(error => console.warn(error)); // Refer to comment on line 13
 }
+
+translate();
