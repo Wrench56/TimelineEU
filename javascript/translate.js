@@ -1,7 +1,7 @@
 "use strict";
 
-const hostURL = window.location.origin;
-const chooseLanguageHref = "TimelineEU/pages/chooseLanguage.html";
+const hostURL = `${window.location.origin}/TimelineEU`;
+const chooseLanguageHref = "/pages/chooseLanguage.html";
 
 if (localStorage.getItem("site-language") == null && window.location.pathname != chooseLanguageHref) {
     localStorage.setItem("language-redirect", window.location.href);
