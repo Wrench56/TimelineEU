@@ -30,7 +30,7 @@ function translate() {
         filename = window.location.pathname.match(/[^\/]+$/)[0].slice(0, -4) + "json";
     let language = localStorage.getItem("site-language");
 
-    if (window.location.pathname != chooseLanguageHref)
+    if (window.location.pathname != `/TimelineEU${chooseLanguageHref}`)
         fetch(`${hostURL}/language/${language}/${filename}`)
             .then(response => response.json())
             .then((json) => {
