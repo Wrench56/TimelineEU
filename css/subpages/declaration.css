@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.parent {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+    
+.div1 { grid-area: 1 / 1 / 6 / 5; }
+.div2 { grid-area: 6 / 1 / 11 / 5; }
+.div3 { grid-area: 1 / 5 / 6 / 10; }
+.div4 { grid-area: 6 / 5 / 11 / 8; }
+.div5 { grid-area: 6 / 8 / 11 / 11; }
